@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Country from './components/Country/Country';
 import Cart from './components/Country/Cart/Cart';
@@ -32,7 +31,7 @@ useEffect(() =>{
       countries.map(country => <Country country={country} handleAddCountry={handleAddCountry} key = {country.alpha3Code}> </Country> )
     }
   </ul>
-  
+
     </div>
   );
 }
